@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Certificados - CENFOD</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CENFOD</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="certificados.html" class="activo">Consulta de Certificados</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="certificados">
+            <h2>Consulta de Constancia de Estudio</h2>
+            <p>Ingrese su número de cédula - Tarjeta de identidad - Permiso de Proctecion Temporal para verificar su validez:</p>
+            <form id="formCertificado">
+                <input type="text" id="codigo" placeholder="Ej: 12345678 o CF-2025-001" required>
+                <button type="submit">Consultar</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CENFOD. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

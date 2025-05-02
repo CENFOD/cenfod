@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 60px;
+}
+
+/* Encabezado */
+header {
+    background-color: #00264d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.activo,
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones del cuerpo */
+main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #00264d;
+    margin-bottom: 15px;
+}
+
+/* Pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #00264d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.servicios ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.servicios li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.informacion-contacto ul {
+    list-style-type: none;
+}
+
+.informacion-contacto li {
+    margin: 5px 0;
+}
+
+.map {
+    margin-top: 30px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+form button {
+    background-color: #00264d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #004080;
+}
+
+.carrusel {
+    overflow: hidden;
+    width: 100%;
+    background: #f5f5f5;
+  }
+  
+  .slide-track {
+    display: flex;
+    animation: mover 30s linear infinite;
+  }
+  
+  .slide {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  @keyframes mover {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
