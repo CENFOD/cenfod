@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
               if (certificados) {
                   resultado.innerHTML = `
-                      <p style="color: green;">Certificado válido.</p>
-                      <p><strong>Nombre:</strong> ${certificado.nombre}</p>
-                      <p><strong>Curso:</strong> ${certificado.curso}</p>
+                      <p style="color: green;"><strong>Certificado válido.</strong></p>
+                      <p><strong>Nombre:</strong> ${certificado.nombre}<br></p>
+                      <p><strong>Curso:</strong> ${certificado.curso}<br></p>
                   `;
               } else {
               resultado.innerHTML = `<p style="color: red;">Certificado no encontrado.</p>`;
